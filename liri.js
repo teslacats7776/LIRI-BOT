@@ -186,7 +186,10 @@ axios.get("http://www.omdbapi.com/?t="+movie+"&y=&plot=short&apikey=2e4f8faf").t
             spotify
             .search({ type: 'track', query: song})
             .then(function(response) {
-              console.log(response.tracks.items[0]);
+              console.log("Artist: " + response.tracks.items[0].artists[0].name);    
+        console.log ("Song: " +response.tracks.items[0].name);
+        console.log ("Album: " +response.tracks.items[0].album.name);
+        console.log ("Link to song on spotify: " + response.tracks.items[0].external_urls["spotify"]);
             })
             .catch(function(err) {
               console.log(err);

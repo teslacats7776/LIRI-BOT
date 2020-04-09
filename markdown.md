@@ -6,6 +6,8 @@ Contain a link to a deployed version of the app
 Clearly list the technologies used in the app
 State your role in the app development
 
+## link to video
+
 #Liri Bot
 ## A Liri Bot is designed to fetch song, movie, artist and event information by user provided input*
 ## User can perform 4 types of searches:
@@ -17,5 +19,27 @@ State your role in the app development
 ### instruction on how to run it
 1. navigate to the root folder of LIRI-BOT
 2. open liri.js file in a terminal
-3. node liri.js <your choice of action> <movie/artist/song name>
-    3a. choice of actions: concert-this/movie-this/spotify-this-song/do-what-it-says
+3. provide your input and choice of actions: concert-this/movie-this/spotify-this-song
+    3a. node liri.js <your choice of action> <movie/artist/song name> 
+4. let LIRI tell you what to do
+    4a. node liri.js do-what-it-says
+5. view your search history at: log.txt
+
+
+## technical specs, the following npm packages are installed:
+LIRI-BOT#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bandsintown": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.1.1",
+    "omdb": "^0.8.0"
+  }
+
+## app structure:
+1. setup: environments, keys packages
+2. module: installed packages
+3. node program file - liri.js
+4. output file - log.txt
+5. default search criteria for do-as-what-i-say: random.txt
