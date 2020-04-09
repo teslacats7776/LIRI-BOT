@@ -7,6 +7,7 @@ Clearly list the technologies used in the app
 State your role in the app development
 
 ## link to video
+https://drive.google.com/open?id=1FE9nTzKpwT9DrpyBh8DvPPejuXog2ZCI
 
 #Liri Bot
 ## A Liri Bot is designed to fetch song, movie, artist and event information by user provided input*
